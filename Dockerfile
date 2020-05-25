@@ -1,7 +1,7 @@
 FROM archlinux/base
 
 RUN pacman -Sy --needed --noconfirm
-RUN pacman -Syu --needed --noconfirm jre-openjdk-headless wget
+RUN pacman -Syu --needed --noconfirm jre-openjdk-headless
 RUN useradd velocity
 COPY build/ /velocity
 RUN chown velocity:velocity -R /velocity
