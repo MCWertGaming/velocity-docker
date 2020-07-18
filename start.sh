@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # vars
-DOCKER_FLAGS="--rm -d -p 9901:9901 --name velocity"
+DOCKER_FLAGS="-p 9901:9901 --name velocity"
 # prepare
 CURREND_DIR="$(pwd)"
 BUILD_DIR="$CURREND_DIR/build"
