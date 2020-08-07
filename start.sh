@@ -14,5 +14,5 @@ VELOCITY_FILE="${VELOCITY_RAW:41:-1}"
 VELOCITY_URL="https://ci.velocitypowered.com/job/velocity/lastStableBuild/artifact/proxy/build/libs/$VELOCITY_FILE"
 wget $VELOCITY_URL -O $BUILD_DIR/velocity.jar
 # build & start container
-docker build -t velocity .
-docker run $DOCKER_FLAGS velocity
+podman build -t velocity .
+podman run $DOCKER_FLAGS velocity
