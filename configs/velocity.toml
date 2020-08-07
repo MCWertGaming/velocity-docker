@@ -87,6 +87,7 @@ show-plugins = false
 # having metrics enabled, and data sent to bStats can't identify your server.
 enabled = true
 # A unique, anonymous ID to identify this proxy with.
-id = "525218da-7790-4321-b514-83050f32b420"
+# create a new one on every restart
+# id = "525218da-7790-4321-b514-83050f32b420"
 
 log-failure = false
