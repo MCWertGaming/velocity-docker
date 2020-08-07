@@ -16,3 +16,5 @@ wget $VELOCITY_URL -O $BUILD_DIR/velocity.jar
 # build & start container
 podman build -t velocity .
 podman run $DOCKER_FLAGS velocity
+# cleanup
+rm -r $BUILD_DIR
